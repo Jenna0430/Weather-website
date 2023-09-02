@@ -1,18 +1,20 @@
 body{
-  background-color: #87CEEB;
+  background-color: #dae4e9;
   box-sizing: border-box;
   padding: 20px;
   scroll-behavior: smooth;
+  height: 100vh;
 }
 .general_container{
+  background-color: #ebf0f3;
   display: block;
   margin: auto;
   margin-top: 3%;
   padding: 10px;
   width: 72%;
-  height: 95vh;
+  height: auto;
   border-radius: 30px;
-  border: 3px solid rgb(20, 18, 18);
+  
 }
 
 
@@ -41,12 +43,15 @@ header{
 
    .myButton{
       color: white;
-     // background-color: #6c5ed6;
+      background-color: #6c5ed6;
       border-radius: 5px;
-      width: 100%;
-     // border: 1px solid #6c5ed6;
+      width: 100%; 
       transition: 6ms ease-in-out;
       text-align: center;
+
+      &:hover{
+        cursor: pointer;
+      }
   }
 
 }
@@ -54,12 +59,12 @@ header{
 
 .complete_WeatherInfo{
  
-  padding: 20px;
+  padding: 10px;
 
-  .day_and_place{
+  .weatherInfo{
     margin-left: -10px ;
 
-    h2{
+    .location{
       font-weight: 600;
       font-size: 3rem;
     }
@@ -67,35 +72,110 @@ header{
   
   .cTemp{
    position: relative;
-   left: 190px;
-   font-size: 4rem;
-   font-weight: bold;
+   left: 39px;
+   top: 120px;
+   font-size: 6rem;
+   font-weight: 400;
    padding-bottom: 20px;
+
+   sup{
+    font-size: 3rem;
+    position: inherit;
+    top: -40px;
+    left: -15px;
+   }
  }
- 
-    .weatherInfo1{
-    position: relative;
-    left: -205px;
-    top: -10px;
+  .info{
+    opacity: 0.8;
+
+    .weatherCondition, .value{
+      color: #6c5ed6;
+    }
+  }
+}
+
+  .mainImage{
+    img{
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+      top: -20px;
+    }
   }
 
-
-
-
-}
-
-
-.emoji{
-  position: relative;
-  left: 195px;
-  bottom: 10px;
-}
-.cTemp sup{
-  font-size: 1rem;
-}
-
-.weekly_Temp{
+ .weekly_Temp{
   opacity: 0.8;
-}
+
+  .weatherTable{
+    display: block;
+    margin: 30px auto;
+    
+    table {
+      border: 1px solid;
+      width: 20%;
+      padding: 5px;
+      margin-bottom: 10px ;
+     
+      td {
+        padding: 5px;
+        text-align: left;
+      }
+    }
+  
+  }
+  
+
+ }
+
+
+ @media screen and (min-width: 840px){
+
+  .general_container{
+    width: 60%;
+    height: 100vh;  
+  }
+
+  .complete_WeatherInfo{
+     .weatherInfo{
+      .location{
+        font-size: 2rem;
+        font-weight: 600;
+        font-size: 4rem;
+        margin-left: 20px;
+      }
+    }
+
+      .info{
+        margin-left: 20px;
+      }
+
+      .cTemp{
+        left: 139px;
+        top: 40px;
+        font-size: 7rem; 
+      }
+    } 
+
+      .searchWeather{
+        input{
+          width: 480px;    
+        }
+
+      .myButton{
+          width: 100px; 
+      }
+    }
+
+    .mainImage{
+      img{
+        width: 100px;
+        left: 80px;
+        top: -110px;
+      }
+    }
+
+ }
 
 
