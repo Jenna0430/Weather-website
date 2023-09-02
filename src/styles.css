@@ -1,80 +1,77 @@
-.general_container{
-  margin: 5%;
+body {
+  background-color: #87CEEB;
+  box-sizing: border-box;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+.general_container {
+  display: block;
+  margin: auto;
+  margin-top: 3%;
   padding: 10px;
-  width: 45%;
-  border: 3px solid rgb(245, 241, 241);
-  box-shadow: 0 2px 2px 0 rgba(190, 147, 147, 0.16), 0 0 0 1px rgba(0,0,0,.08);
-}
-header{
-  padding: 4px;
+  width: 72%;
+  height: 95vh;
+  border-radius: 30px;
+  border: 3px solid rgb(20, 18, 18);
 }
 
-.logo{
-  width: 70%;
+header {
+  padding: 15px;
+  padding-bottom: 25px;
+}
+header .logo {
+  width: 40%;
 }
 
-nav li{
-  list-style-type: none;
-  color: blueviolet;
-  font-weight: 500;
-  font-size: 1.1rem;
-}
-nav li:hover{
-  text-decoration: underline;
-  cursor: pointer;
-}
-nav{
-  column-count: 4;
-}
-.searchWeather input{
-  width: 450px;
+.searchWeather input {
+  width: 200px;
   border: 1px solid grey;
 }
-.searchWeather input:hover{
+.searchWeather input:hover {
   box-shadow: 0 0 5px #6c5ed6;
 }
-
-.searchWeather button{
-    color: white;
-    background-color: #6c5ed6;
-    border-radius: 5px;
-    width: 90px;
-    border: 1px solid #6c5ed6;
-    transition: 6ms ease-in-out;
+.searchWeather .myButton {
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  transition: 6ms ease-in-out;
+  text-align: center;
 }
 
-.btn:hover{
-  box-shadow: 0 0 5px #6c5ed6;
+.complete_WeatherInfo {
+  padding: 20px;
 }
-.complete_WeatherInfo{
-  /* color: grey; */
-  opacity: 0.8;
-  padding-bottom: 20px;
+.complete_WeatherInfo .day_and_place {
+  margin-left: -10px;
 }
-.weatherInfo{
-  line-height: .5rem;
+.complete_WeatherInfo .day_and_place h2 {
+  font-weight: 600;
+  font-size: 3rem;
 }
-.cTemp{
-   position: relative;
+.complete_WeatherInfo .cTemp {
+  position: relative;
   left: 190px;
-  font-size: 1.7rem;
+  font-size: 4rem;
   font-weight: bold;
   padding-bottom: 20px;
 }
-.emoji{
+.complete_WeatherInfo .weatherInfo1 {
+  position: relative;
+  left: -205px;
+  top: -10px;
+}
+
+.emoji {
   position: relative;
   left: 195px;
   bottom: 10px;
 }
-.cTemp sup{
+
+.cTemp sup {
   font-size: 1rem;
 }
-.weatherInfo1{
-  position: relative;
-  left: 70px;
-}
-.weekly_Temp{
+
+.weekly_Temp {
   opacity: 0.8;
-}
-
-
+}/*# sourceMappingURL=styles.css.map */

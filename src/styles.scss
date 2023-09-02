@@ -1,0 +1,101 @@
+body{
+  background-color: #87CEEB;
+  box-sizing: border-box;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+.general_container{
+  display: block;
+  margin: auto;
+  margin-top: 3%;
+  padding: 10px;
+  width: 72%;
+  height: 95vh;
+  border-radius: 30px;
+  border: 3px solid rgb(20, 18, 18);
+}
+
+
+header{
+
+  padding: 15px;
+  padding-bottom: 25px;
+
+  .logo{
+    width: 40%;
+  }
+ 
+}
+
+
+.searchWeather{
+
+    input{
+      width: 200px;
+      border: 1px solid grey;
+    
+      &:hover{
+      box-shadow: 0 0 5px #6c5ed6;
+    }
+  }
+
+   .myButton{
+      color: white;
+     // background-color: #6c5ed6;
+      border-radius: 5px;
+      width: 100%;
+     // border: 1px solid #6c5ed6;
+      transition: 6ms ease-in-out;
+      text-align: center;
+  }
+
+}
+
+
+.complete_WeatherInfo{
+ 
+  padding: 20px;
+
+  .day_and_place{
+    margin-left: -10px ;
+
+    h2{
+      font-weight: 600;
+      font-size: 3rem;
+    }
+  }
+  
+  .cTemp{
+   position: relative;
+   left: 190px;
+   font-size: 4rem;
+   font-weight: bold;
+   padding-bottom: 20px;
+ }
+ 
+    .weatherInfo1{
+    position: relative;
+    left: -205px;
+    top: -10px;
+  }
+
+
+
+
+}
+
+
+.emoji{
+  position: relative;
+  left: 195px;
+  bottom: 10px;
+}
+.cTemp sup{
+  font-size: 1rem;
+}
+
+.weekly_Temp{
+  opacity: 0.8;
+}
+
+
