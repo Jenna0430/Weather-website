@@ -67,6 +67,7 @@ header{
     .location{
       font-weight: 600;
       font-size: 3rem;
+      color: #a0afb6;
     }
   }
   
@@ -77,6 +78,7 @@ header{
    font-size: 6rem;
    font-weight: 400;
    padding-bottom: 20px;
+   color: #a0afb6;
 
    sup{
     font-size: 3rem;
@@ -107,27 +109,13 @@ header{
 
  .weekly_Temp{
   opacity: 0.8;
-
-  .weatherTable{
-    display: block;
-    margin: 30px auto;
-    
-    table {
-      border: 1px solid;
-      width: 20%;
-      padding: 5px;
-      margin-bottom: 10px ;
-     
-      td {
-        padding: 5px;
-        text-align: left;
-      }
-    }
   
   }
   
-
- }
+  .weekly_Temp{
+    margin: 10px;
+  }
+ 
 
 
  @media screen and (min-width: 840px){
