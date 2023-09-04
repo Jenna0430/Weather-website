@@ -1,127 +1,71 @@
-body {
-  background-color: #dae4e9;
-  box-sizing: border-box;
+body{
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+h1{
+  color: #878787;
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  opacity: 0.8;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 20px;
+}
+
+.weather-app-container{
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.weatherApp{
   padding: 20px;
-  scroll-behavior: smooth;
-  height: 100vh;
-}
-
-.general_container {
-  background-color: #ebf0f3;
-  display: block;
-  margin: auto;
-  margin-top: 3%;
-  padding: 10px;
-  width: 72%;
-  height: auto;
-  border-radius: 30px;
-}
-
-header {
-  padding: 15px;
-  padding-bottom: 25px;
-}
-header .logo {
-  width: 40%;
-}
-
-.searchWeather input {
-  width: 200px;
-  border: 1px solid grey;
-}
-.searchWeather input:hover {
-  box-shadow: 0 0 5px #6c5ed6;
-}
-.searchWeather .myButton {
-  color: white;
-  background-color: #6c5ed6;
+  border: 1px solid #dadde1;
   border-radius: 5px;
-  width: 100%;
-  transition: 6ms ease-in-out;
-  text-align: center;
-}
-.searchWeather .myButton:hover {
-  cursor: pointer;
 }
 
-.complete_WeatherInfo {
-  padding: 10px;
+.cityInfo{
+  margin-bottom: 20px;
 }
-.complete_WeatherInfo .weatherInfo {
-  margin-left: -10px;
+
+.weather-temp img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
 }
-.complete_WeatherInfo .weatherInfo .location {
-  font-weight: 600;
-  font-size: 3rem;
-  color: #a0afb6;
-}
-.complete_WeatherInfo .cTemp {
-  position: relative;
-  left: 39px;
-  top: 120px;
-  font-size: 6rem;
+
+.weather-temp strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
   font-weight: 400;
-  padding-bottom: 20px;
-  color: #a0afb6;
-}
-.complete_WeatherInfo .cTemp sup {
-  font-size: 3rem;
-  position: inherit;
-  top: -40px;
-  left: -15px;
-}
-.complete_WeatherInfo .info {
-  opacity: 0.8;
-}
-.complete_WeatherInfo .info .weatherCondition, .complete_WeatherInfo .info .value {
-  color: #6c5ed6;
 }
 
-.mainImage img {
-  width: 100px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.weather-temp .units {
   position: relative;
-  top: -20px;
+  font-size: 16px;
+  top: -34px;
 }
 
-.weekly_Temp {
-  opacity: 0.8;
+.weather-temp .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
 }
 
-.weekly_Temp {
-  margin: 10px;
+.weather-temp .active:hover {
+  text-decoration: none;
 }
 
-@media screen and (min-width: 840px) {
-  .general_container {
-    width: 60%;
-    height: 100vh;
-  }
-  .complete_WeatherInfo .weatherInfo .location {
-    font-size: 2rem;
-    font-weight: 600;
-    font-size: 4rem;
-    margin-left: 20px;
-  }
-  .complete_WeatherInfo .info {
-    margin-left: 20px;
-  }
-  .complete_WeatherInfo .cTemp {
-    left: 139px;
-    top: 40px;
-    font-size: 7rem;
-  }
-  .searchWeather input {
-    width: 480px;
-  }
-  .searchWeather .myButton {
-    width: 100px;
-  }
-  .mainImage img {
-    width: 100px;
-    left: 80px;
-    top: -110px;
-  }
-}/*# sourceMappingURL=styles.css.map */
