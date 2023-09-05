@@ -71,6 +71,7 @@ function handleSubmit(event) {
 function displayFahrenheit(event){
   event.preventDefault();
   let tempElement = document.querySelector("#temp");
+  alert(`${tempElement}`);
   let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
   tempElement.innerHTML = Math.round(fahrenheitTemp);
 
@@ -82,4 +83,4 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink .addEventListener("cliick", displayFahrenheit);
+fahrenheitLink .addEventListener("click", displayFahrenheit);
