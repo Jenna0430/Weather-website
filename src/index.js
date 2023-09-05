@@ -77,6 +77,12 @@ function displayFahrenheit(event){
 
 }
 
+function displayCelsius(event){
+  event.preventDefault();
+  let tempElement = document.querySelector("#temp");
+  tempElement.innerHTML = Math.round(celsiusTemp);
+}
+
 let celsiusTemp = null;
 
 let form = document.querySelector("#search-form");
@@ -84,3 +90,8 @@ form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink .addEventListener("click", displayFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink .addEventListener("click", displayCelsius);
+
+search("Nairobi");
