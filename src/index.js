@@ -78,17 +78,6 @@ function getForecast(coordinates) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 //function to display the temperature and forecast of the city
 function displayTemp(response) {
   let tempElement = document.querySelector("#temp");
@@ -113,7 +102,7 @@ function displayTemp(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
-  // getForecast(response.data.coord);
+  getForecast(response.data.coord);
 }
 
 //function that uses the api to search for the city
